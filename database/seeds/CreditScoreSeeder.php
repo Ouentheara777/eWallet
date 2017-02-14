@@ -15,23 +15,23 @@ class CreditScoreSeeder extends Seeder
         // Manually Defined Credit Scores.
         $records = [
             [
-                'category' => 1,
+                'category_id' => 1,
                 'credit_point' => 2
             ],
             [
-                'category' => 2,
+                'category_id' => 2,
                 'credit_point' => 4
             ],
             [
-                'category' => 3,
+                'category_id' => 3,
                 'credit_point' => 7
             ],
             [
-                'category' => 4,
+                'category_id' => 4,
                 'credit_point' => 8
             ],
             [
-                'category' => 5,
+                'category_id' => 5,
                 'credit_point' => 10
             ]
         ];

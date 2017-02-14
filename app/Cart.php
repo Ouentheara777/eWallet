@@ -66,8 +66,7 @@ class Cart extends Model
 
             $category_id = $list[$item]['category'];
             // To Get the Credit of the Item.
-            $credit = Credits::where('category_id', $category_id)->pluck('credit_point');
-            $credit_point += $credit->first();
+            $credit_point += Items::getCreditScore($category_id);
         }
         $user = Auth::user();
         // To Update the Credit to User.

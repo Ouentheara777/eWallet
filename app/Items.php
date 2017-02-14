@@ -11,6 +11,8 @@ use Illuminate\Database\Eloquent\Model;
 class Items extends Model
 {
     /**
+     * List of Items.
+     *
      * @return array
      */
     public static function getItems()
@@ -24,7 +26,7 @@ class Items extends Model
                 'weight' => 2,
                 'unit' => 'lbs',
                 'color' => 'blue',
-                'price' => 1099,
+                'price' => 199,
                 'stock' => 50,
             ],
             'college-bag' => [
@@ -35,7 +37,7 @@ class Items extends Model
                 'weight' => 2.5,
                 'unit' => 'lbs',
                 'color' => 'black',
-                'price' => 1899,
+                'price' => 899,
                 'stock' => 50,
             ],
             'laptop-bag' => [
@@ -46,7 +48,7 @@ class Items extends Model
                 'weight' => 4,
                 'unit' => 'lbs',
                 'color' => 'grey',
-                'price' => 2599,
+                'price' => 599,
                 'stock' => 40,
             ],
             'travel-bag' => [
@@ -57,7 +59,7 @@ class Items extends Model
                 'weight' => 4,
                 'unit' => 'lbs',
                 'color' => 'red',
-                'price' => 4999,
+                'price' => 999,
                 'stock' => 20,
             ],
             'ladies-bag' => [
@@ -68,7 +70,7 @@ class Items extends Model
                 'weight' => 5,
                 'unit' => 'lbs',
                 'color' => 'black',
-                'price' => 3599,
+                'price' => 599,
                 'stock' => 20,
             ],
             'kids-bag' => [
@@ -79,13 +81,15 @@ class Items extends Model
                 'weight' => 2,
                 'unit' => 'lbs',
                 'color' => 'yellow',
-                'price' => 1099,
+                'price' => 199,
                 'stock' => 50,
             ]
         ];
     }
 
     /**
+     * To Get Credit Score of an Item.
+     *
      * @param $category_id
      * @return int
      */
@@ -98,6 +102,8 @@ class Items extends Model
     }
 
     /**
+     * To Get Individual Item.
+     *
      * @param $sku
      * @return bool|mixed
      */
@@ -115,6 +121,8 @@ class Items extends Model
     }
 
     /**
+     * To Add Item to Session.
+     *
      * @param $item
      * @return bool
      */
