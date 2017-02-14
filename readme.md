@@ -9,6 +9,11 @@ Simple eWallet system for Comfortable purchasing.
 
      composer require shankarthiyagaraajan/ewallet
      
+**Database Migration**
+---
+
+     php artisan migrate
+     
 **Seeding Database**
 ---
 
