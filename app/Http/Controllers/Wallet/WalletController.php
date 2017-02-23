@@ -55,7 +55,7 @@ class WalletController extends BaseController
     public function cart()
     {
         // Getting Active Items.
-        // NOTE: Here, we load all items, because its stored as Array.
+        // Here, we load all items, because its stored as Array.
         $items['list'] = Items::getItems();
         // Getting Cart Items.
         $items['cart'] = Cart::getItems();
@@ -63,6 +63,8 @@ class WalletController extends BaseController
     }
 
     /**
+     * To Remvoe Cart Item.
+     *
      * @param $sku
      * @return bool
      */
@@ -73,6 +75,8 @@ class WalletController extends BaseController
     }
 
     /**
+     * To Init Checkout View.
+     *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function checkout()
@@ -83,7 +87,7 @@ class WalletController extends BaseController
     }
 
     /**
-     *
+     * To Init Payment View.
      */
     public function initPayment()
     {
