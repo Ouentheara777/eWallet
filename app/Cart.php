@@ -40,7 +40,7 @@ class Cart extends Model
         if (!isset($item)) return false;
         if (!$items || empty($items)) return false;
 
-        // Searching the Index fro remove.
+        // Searching the Index for remove.
         if (($index = array_search($item, $items)) >= 0) {
             unset($items[$index]);
         }
